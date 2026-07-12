@@ -24,9 +24,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Build hero artwork
-        run: |
-          cat assets/hero.part1 assets/hero.part2 assets/hero.part3 | base64 --decode > assets/shirabeo-hero-v5.jpg
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
