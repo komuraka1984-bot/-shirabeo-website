@@ -7,6 +7,13 @@
     (function () {
       var path = window.location.pathname.replace(/\/+$/, "");
 
+
+      var demoPath = path.toUpperCase();
+      if (demoPath === "/DEMO4" || demoPath === "/DEMO7") {
+        window.location.replace("https://shirabeo-booth-agent.komuraka.chatgpt.site/?demo=" + (demoPath === "/DEMO4" ? "patient" : "doctor"));
+        return;
+      }
+
       if (path === "/RD4" || path === "/rd4") {
         window.location.replace("https://shirabeo.com/RD4/");
         return;
