@@ -1,5 +1,5 @@
 const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.site-menu');
+const menu = document.getElementById('menu');
 
 if (menuButton && menu) {
   menuButton.addEventListener('click', () => {
@@ -12,6 +12,14 @@ if (menuButton && menu) {
       menu.classList.remove('open');
       menuButton.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  menu.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      menu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.focus();
+    }
   });
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta
       name="description"
-      content="Shirabeoは、患者報告アウトカムと臨床情報を診療に活かす臨床プラットフォームです。"
+      content="Shirabeoは、患者さんの質問票入力から自動採点・前回比較・経時グラフまでをつなぎ、日常診療を支援する臨床プラットフォームです。"
     >
     <meta name="theme-color" content="#020d18">
     <title>Shirabeo Labs | One Insight. Many Possibilities.</title>
@@ -17,6 +17,7 @@
     >
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="hero-artwork.css">
+    <link rel="stylesheet" href="refinements.css">
   </head>
   <body>
     <header>
@@ -27,7 +28,7 @@
         ><button type="button" class="menu-button" aria-expanded="false" aria-controls="menu">
           Menu
         </button>
-        <nav id="menu">
+        <nav id="menu" aria-label="メインナビゲーション">
           <a href="#platform">Platform</a
           ><a href="#applications">Applications</a><a href="#vision">Vision</a
           ><a href="#about">About</a
@@ -40,13 +41,13 @@
         <div class="container hero-inner">
           <div class="hero-copy">
             <p class="kicker">Clinical data platform</p>
-            <h1>散らばる情報を、<br>意味ある <em>Insight</em> へ。</h1>
+            <h1><span class="heading-phrase">散らばる情報を、</span><br><span class="heading-phrase">意味ある</span> <span class="heading-phrase"><em>Insight</em>へ。</span></h1>
             <p class="lead">
-              患者状態の把握とデータ活用を支援する、<br>日常診療のための臨床プラットフォーム。
+              患者さんが質問票に入力し、結果の自動採点・前回比較・経時グラフを診察で確認。<br>日常診療のための臨床プラットフォームです。
             </p>
             <p class="brand-line">One Insight. Many Possibilities.</p>
             <a class="button outline-gold" href="#platform"
-              >Platformを見る <span>→</span></a
+              >できることを見る <span aria-hidden="true">→</span></a
             >
           </div>
           <div class="scroll-note">SCROLL</div>
@@ -58,7 +59,7 @@
             <div class="round-icon cyan">⌕</div>
             <div>
               <strong>患者が伝える。</strong>
-              <p>PROを、短時間で入力。</p>
+              <p>症状や生活への影響を、質問票で入力。</p>
             </div>
           </article>
           <article>
@@ -92,7 +93,7 @@
                 <p>
                   QRコードからの入力、リアルタイム集計、診察時の確認まで。日常外来に無理なく組み込める導線を設計します。
                 </p>
-                <a href="mailto:contact@shirabeo.com">詳しく見る →</a>
+                <a href="mailto:contact@shirabeo.com">導入について問い合わせる →</a>
               </div>
             </article>
             <article class="insight-card">
@@ -103,7 +104,7 @@
                 <p>
                   スコアの推移や治療経過を見える形にし、患者との対話と経過の把握を支えます。
                 </p>
-                <a href="mailto:contact@shirabeo.com">詳しく見る →</a>
+                <a href="mailto:contact@shirabeo.com">導入について問い合わせる →</a>
               </div>
             </article>
           </div>
@@ -113,30 +114,35 @@
         <div class="container">
           <div class="section-title center">
             <p>Clinical Applications</p>
-            <h2>皮膚疾患領域から、対応を進めています。</h2>
+            <h2><span class="heading-phrase">皮膚疾患領域から、</span><span class="heading-phrase">対応を進めています。</span></h2>
           </div>
           <div class="application-grid">
             <article>
               <span>AD</span>
               <h3>Atopic Dermatitis</h3>
               <p>アトピー性皮膚炎</p>
+              <p class="availability">提供準備中</p>
             </article>
             <article>
               <span>CU</span>
               <h3>Chronic Urticaria</h3>
               <p>慢性蕁麻疹</p>
+              <p class="availability">提供準備中</p>
             </article>
             <article>
               <span>PSO</span>
               <h3>Psoriasis</h3>
               <p>乾癬</p>
+              <p class="availability">提供準備中</p>
             </article>
             <article>
               <span>SSc</span>
               <h3>Systemic Sclerosis</h3>
-              <p>全身性強皮症・開発中</p>
+              <p>全身性強皮症</p>
+              <p class="availability">開発中</p>
             </article>
           </div>
+          <p class="availability-note">現在、正式提供に向けて準備を進めています。導入時期・対応する質問票については、<a href="mailto:contact@shirabeo.com">お問い合わせください</a>。</p>
         </div>
       </section>
       <section class="section clinical-perspective" aria-labelledby="clinical-perspective-title">
@@ -146,12 +152,12 @@
               <p class="eyebrow">Clinical Perspective</p>
               <span>Urticaria / UCT</span>
             </div>
-            <blockquote>
+            <div class="perspective-commentary">
               <p class="guideline-note">
-                日本皮膚科学会「蕁麻疹診療ガイドライン2026（第4版）」に沿って
+                ガイドラインを踏まえた、開発者の視点
               </p>
               <h2 id="clinical-perspective-title">
-                患者が感じる変化を、診療の共通言語に。
+                <span class="heading-phrase">患者が感じる変化を、</span><span class="heading-phrase">診療の共通言語に。</span>
               </h2>
               <p>
                 慢性蕁麻疹では、診察時の皮疹や医師による評価だけでは、患者さんが日常生活の中で感じている症状や治療効果を十分に把握できないことがあります。
@@ -162,8 +168,8 @@
               <p>
                 UCTは治療方針を自動的に決めるものではありません。丁寧な問診と医師の総合的な判断を支えるツールとして、継続して活用できる診療環境を整えることが重要です。
               </p>
-              <footer>小村 一浩</footer>
-            </blockquote>
+              <p class="perspective-author">小村 一浩 <span>医師・Shirabeo開発者</span></p>
+            </div>
           </div>
           <p class="guideline-reference">
             参考：
@@ -178,9 +184,9 @@
           <div class="vision-orb" aria-hidden="true"></div>
           <div>
             <p class="eyebrow">Vision</p>
-            <h2>データを集めるだけではなく、診療で活かす。</h2>
+            <h2><span class="heading-phrase">データを集め、</span><span class="heading-phrase">診療で活かす。</span></h2>
             <p>
-              Shirabeoは、日々蓄積されるPROと診療情報を、患者ごとの経過として見える形に整えます。入力の負担を抑え、診療時の情報整理と患者との対話を支援します。
+              Shirabeoは、日々蓄積される患者報告アウトカム（PRO）と診療情報を、患者ごとの経過として見える形に整えます。入力の負担を抑え、診療時の情報整理と患者との対話を支援します。
             </p>
           </div>
           <aside>
@@ -201,8 +207,9 @@
           >
         </div>
         <div>
-          <p>Shirabeo Labs</p>
-          <p>Kanazawa, Japan</p>
+          <p class="company-name">株式会社Shirabeo Labs</p>
+          <p>代表取締役 小村 一浩（医師）</p>
+          <p>石川県金沢市 / Kanazawa, Japan</p>
         </div>
         <div>
           <a href="mailto:contact@shirabeo.com">contact@shirabeo.com</a>
