@@ -1,4 +1,11 @@
 /* Readable headings and product details within the existing brand. */
+.product-preview { padding-top: 0; }
+.preview-description { max-width: 760px; margin: -12px auto 32px; color: var(--muted); text-align: center; font-size: 16px; }
+.cockpit-preview { margin: 0; }
+.cockpit-preview > a { display: block; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #070e18; }
+.cockpit-preview img { display: block; width: 100%; height: auto; }
+.cockpit-preview figcaption { margin-top: 16px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.cockpit-preview figcaption a { display: inline-block; margin-left: 12px; color: var(--cyan); text-decoration: underline; text-underline-offset: 4px; }
 .heading-phrase { display: inline-block; }
 html { scroll-padding-top: 110px; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
