@@ -18,6 +18,47 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="hero-artwork.css">
     <link rel="stylesheet" href="refinements.css">
+    <!-- Google Analytics: public homepage only. -->
+    <script>
+      (() => {
+        const isPublicHomepage =
+          ['shirabeo.com', 'www.shirabeo.com'].includes(window.location.hostname) &&
+          ['/', '/index.html'].includes(window.location.pathname);
+        if (!isPublicHomepage) return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        // Keep query strings, fragments and referring page paths out of Analytics.
+        let referrer = '';
+        try {
+          const url = new URL(document.referrer);
+          if (url.protocol === 'https:' || url.protocol === 'http:') {
+            referrer = url.origin + '/';
+          }
+        } catch (_) {}
+
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-807XCX98MG', {
+          page_location: 'https://shirabeo.com/',
+          page_referrer: referrer,
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+          cookie_flags: 'SameSite=Lax;Secure'
+        });
+
+        const tag = document.createElement('script');
+        tag.async = true;
+        tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-807XCX98MG';
+        document.head.appendChild(tag);
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -231,6 +272,11 @@
           <p>© <span id="year"></span> Shirabeo Labs</p>
         </div>
       </div>
+      <details class="container" style="padding-bottom: 24px; color: var(--muted); font-size: 13px; line-height: 1.8;">
+        <summary style="cursor: pointer;">アクセス解析について</summary>
+        <p>当サイトでは、閲覧状況の把握とサイト改善のためGoogle Analyticsを使用しています。Cookie等を用いて、閲覧情報や端末・ブラウザー情報をGoogleへ送信します。広告向けのGoogleシグナルと広告パーソナライズは無効にしています。</p>
+        <p><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">Googleによるデータの利用</a> ／ <a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener noreferrer">Google Analyticsの無効化</a></p>
+      </details>
     </footer>
     <script src="script.js"></script>
   </body>
