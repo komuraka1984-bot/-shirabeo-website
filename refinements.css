@@ -12,7 +12,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
 .feature-grid .flow-card .label { color: var(--cyan); }
 .application-grid .availability { margin-top: 14px; font-size: 14px; color: var(--gold2); }
 .availability-note { margin: 28px auto 0; max-width: 780px; color: var(--muted); text-align: center; font-size: 16px; }
-.availability-note a { color: var(--cyan); text-decoration: underline; text-underline-offset: 4px; }
+.availability-note a { display: inline-block; color: var(--cyan); text-decoration: underline; text-underline-offset: 4px; }
 .perspective-panel { grid-template-columns: 190px minmax(0, 1fr); gap: 36px; padding: 44px; }
 .perspective-panel h2 { font-size: clamp(28px, 2.5vw, 36px); line-height: 1.55; }
 .guideline-note, .guideline-reference { font-size: 14px; }
