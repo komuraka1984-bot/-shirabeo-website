@@ -3,12 +3,114 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redirecting to Shirabeo RD4</title>
-    <meta http-equiv="refresh" content="0; url=https://patient-insights-rd4.onrender.com">
-    <link rel="canonical" href="https://patient-insights-rd4.onrender.com">
+    <meta name="robots" content="noindex, nofollow">
+    <title>メンテナンス中 | Shirabeo Labs</title>
+    <link rel="canonical" href="https://shirabeo.com/RD4/">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #173433;
+        --muted: #5d706f;
+        --accent: #2aa99a;
+        --accent-soft: #e8f7f4;
+        --line: #d8e8e5;
+        --background: #f5faf9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, #ffffff 0, transparent 42%),
+          var(--background);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+          "Yu Gothic", Meiryo, sans-serif;
+      }
+
+      main {
+        width: min(100%, 660px);
+        padding: clamp(32px, 7vw, 64px);
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(23, 52, 51, 0.1);
+      }
+
+      .brand {
+        margin-bottom: 28px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 750;
+        letter-spacing: 0.18em;
+      }
+
+      .status {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 7px 11px;
+        color: #187a70;
+        background: var(--accent-soft);
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      h1 {
+        margin: 0 0 22px;
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+
+      .english {
+        margin-top: 22px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        color: #187a70;
+        font-weight: 700;
+        text-underline-offset: 4px;
+      }
+
+      a:focus-visible {
+        outline: 3px solid rgba(42, 169, 154, 0.35);
+        outline-offset: 4px;
+        border-radius: 4px;
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to Shirabeo RD4...</p>
-    <p><a href="https://patient-insights-rd4.onrender.com">Click here if you are not redirected.</a></p>
+    <main aria-labelledby="maintenance-title">
+      <div class="brand">SHIRABEO LABS</div>
+      <div class="status">SERVER MIGRATION</div>
+      <h1 id="maintenance-title">メンテナンス中です</h1>
+      <p>ただいま、国内サーバーへの移行に伴うメンテナンスを実施しています。</p>
+      <p>再開まで今しばらくお待ちください。ご不便をおかけいたしますが、ご理解のほどよろしくお願いいたします。</p>
+      <p class="english" lang="en">This service is temporarily unavailable during our server migration. Please check back later.</p>
+      <a href="/">Shirabeo Labs トップへ戻る</a>
+    </main>
   </body>
 </html>
